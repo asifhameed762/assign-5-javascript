@@ -135,7 +135,7 @@ if("car" < "cat"){
 
 
 // Q6.
-document.write("Q6.<h1>Marks Sheet</h1>");
+document.write("<h1>Q6. Marks Sheet</h1>");
 let totalMarks = 1100;
 let subject1 = +prompt("Enter Obtained Marks",250);
 let subject2 = +prompt("Enter Obtained Marks",350);
@@ -216,14 +216,45 @@ else{
 }
 
 // Q10.
+let temp = +prompt("Enter the temprature");
 
-
-
-
-
-
-
-
-
-
+if(temp > 40){
+    document.write("Q10 . <br> a. It is too hot outside.");
+}
+else if(temp > 30){
+    document.write("Q10 . <br> b.The weather today is normal");
+}
+else if(temp > 20){
+    document.write("Q10 . <br> c. Today's weather is cool");
+}
+else{
+    document.write("Q10 . <br> d. OMG! Today’s weather is so Cool.");
+}
 // Q11.
+document.write("<h1>Q11 . Calculator</h1>");
+
+let firstNumber = +prompt("Enter First Number");
+let operator = prompt("Enter + , - , / , * ,%");
+let secondNumber = +prompt("Enter Second Number");
+
+let result;
+if(operator == '+'){
+    result = firstNumber + secondNumber;
+}
+else if(operator == '-'){
+    result = firstNumber - secondNumber;
+}
+else if(operator ==  '*'){
+    result = firstNumber * secondNumber;
+}
+else if(operator == '/'){
+    result = firstNumber / secondNumber;
+}
+else if(operator == '%'){
+    result = firstNumber % secondNumber;
+}
+else{
+    result = "Nothing else";
+}
+document.write("Result is " , result);
+
